@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #101010;
+  color: white;
+}
+
+.container {
+  margin: 5rem 2rem 2rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.todo-item {
+  border: 0.5px solid #dccbb0;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 1.5rem;
+  width: 30rem;
+  display: flex;
+}
+
+.title {
+  font-weight: 700;
+  color: #dccbb0;
+}
+
+.todo-label {
+  color: black;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background-color: #ff5631;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+  margin-left: auto;
+  border: none;
+  cursor: pointer;
+}
+
+.input-group {
+  width: 30rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-group input {
+  border: none;
+  background-color: #1e1e1e;
+  border-radius: 20px;
+  padding: 20px;
+  width: 85%;
+  color: #dccbb0;
+  font-size: 18px;
+}
+
+.input-group input::placeholder {
+  font-size: 18px;
+  color: #726e66;
+}
+
+.input-group button {
+  border-radius: 100%;
+  background-color: #ff5631;
+  height: 50px;
+  width: 50px;
+  color: black;
+  font-weight: 800;
+  font-size: 30px;
+  border: none;
+  position: relative;
+  top: 10px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.input-group input:focus {
+  outline: none;
+}
