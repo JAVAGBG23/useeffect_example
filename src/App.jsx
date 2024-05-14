@@ -1,6 +1,29 @@
 import { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
+import Modal from "./Modal";
 
+function App() {
+  const [status, setStatus] = useState(false);
+
+  return (
+    <div className="container">
+      {status && (
+        <Modal close={() => setStatus(false)}>
+          <div className="container">
+            <p>This is the Modal</p>
+          </div>
+        </Modal>
+      )}
+      <button onClick={() => setStatus(true)} className="modal-btn">
+        Click me!
+      </button>
+    </div>
+  );
+}
+
+export default App;
+
+/*
 function App() {
   const [todos, setTodos] = useState(
     JSON.parse(localStorage.getItem("Todos")) || []
@@ -64,3 +87,6 @@ function App() {
 }
 
 export default App;
+
+
+*/
